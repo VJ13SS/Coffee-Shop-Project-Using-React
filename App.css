@@ -1,0 +1,25 @@
+*{
+  scroll-behavior:smooth;
+}
+
+body{
+  background-color:#2a140f;
+}
+
+main{
+  position: relative;
+  height:100%;
+  width:100%;
+}
+
+main img{
+  height:680px;
+  width:100%;
+  object-fit:cover;
+}
+
+@media screen and (max-width: 670px){
+  main img{
+    height:100%;
+  }
+}
