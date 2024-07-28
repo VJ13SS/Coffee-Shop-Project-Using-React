@@ -1,0 +1,442 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Roboto;
+}
+
+.NavAndHero{
+  position: absolute;
+  top:0;
+  background-color: transparent;
+  width:100%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:10px;
+  width:100%;
+  height:50px;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.nav-logo img{
+  width: 40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.nav-links ul{
+  display: flex;
+  gap:10px;
+  font-size:20px;
+  list-style:none;
+  }
+
+.nav-links ul a{
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.nav-icons{
+  color:white;
+  display: flex;
+  gap:10px;
+}
+
+.cart-items{
+  position: absolute;
+  top:50px;
+  right:2px;
+  width:250px;
+  height:300px;
+  background-color:rgba(255,255,255,0.9);
+  text-align:center;
+  transform:translateY(100px);
+  transition:0.5s;
+  opacity:0;
+}
+
+.Hero{
+  width:100%;
+  height:50%;
+}
+
+.Hero .Hero-text{
+  top:70px;
+  position: absolute;
+  padding-left:10px;
+  color:white;
+  max-width:275px;
+  text-align:left;
+}
+
+.Hero .Hero-text h1{
+  font-weight:bolder;
+  font-size:40px;
+  letter-spacing:1px;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.Hero .Hero-text p{
+  font-weight:400;
+  font-size:12px;
+  margin-top:10px;
+}
+
+.Hero .Hero-text button{
+  width:150px;
+  height:40px;
+  margin-top:10px;
+  background-color:#aa4c0a;
+  border: none;
+  color:white;
+  font-weight:bold;
+  border-radius:10px;
+}
+.about-us{
+  position: absolute;
+  z-index: 100;
+  top:400px;
+  display: flex;
+  padding:10px;
+  align-items:center;
+  max-height:250px;
+  background-color: transparent;
+}
+
+.about-us-text{
+  max-width:80%;
+  font-size:14px;
+  color:white;
+  font-weight:500;
+}
+
+.menuCard{
+ /* position: absolute;*/
+  color:white;
+  padding:2px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:100%;
+  background-color: #2a140f;
+  margin-top:0px;
+  position:relative;
+}
+
+.menuCard img{
+  height:1000px;
+  object-fit:cover;
+}
+
+#menu{
+  position: absolute;
+  top:0;
+}
+#products{
+  position: absolute;
+  top:500px;
+}
+
+.menuCard p{
+  position: absolute;
+  top:600px;
+}
+
+.menuItems,.products{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  width:100%;
+  padding:10px;
+  position: absolute;
+  top:50px;
+  gap:1px;
+}
+
+.products{
+  top:550px;
+}
+
+.menuItem,.product{
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  width:33%;
+  height:200px;
+  max-height:200px;
+  border:1px solid white;
+  font-size:14px;
+  background-color:rgba(42, 20, 14,0.7);
+}
+.product{
+  font-size:15px;
+}
+
+.product button{
+  font-size:12px;
+  color:white;
+  font-weight:bolder;
+  background-color:#824c2a;
+  border: none;
+  height:30px; 
+  width:100px;
+  border-radius:10px;
+
+}
+
+.menuItem img,.product img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+.product-icons{
+  display: flex;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+  font-size:14px;
+}
+
+.menuItem:hover,.product:hover{
+  background-color:rgba(42, 20, 14,1);
+  height:220px;
+  max-height:220px;
+}
+
+.menuItem img:hover,
+.product img:hover{
+  transform: scale(1.1);
+}
+
+.reviews{
+  position: relative; 
+  color:white;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+  background-color:rgba(42, 20, 14,1);
+}
+
+.reviews h2{
+  position: absolute;
+  top:10px;
+  
+}
+
+.reviews img{
+  width:100%;
+  height:660px;
+  object-fit:cover;
+}
+
+.customer-reviews{
+  position: absolute;
+  top:50px;
+  font-weight:bolder;
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+  padding:10px;
+}
+
+.reviewCard{
+  display: flex;
+  gap:5px;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+  padding:10px;
+  border:1px solid white;
+  padding-left:5px;
+}
+
+.reviewCard .reviewUser img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+.reviewUser{
+  display: flex;
+  gap:10px;
+  align-items:center;
+  width:100%;
+}
+
+.contacts-container{
+  text-align:center;
+  color:white;
+  padding-top:10px;
+  position: relative;
+  width:100%;
+  border:1px solid white;
+}
+
+.contacts, .contact-field{
+  height:200px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts{
+  width:100%;
+}
+.contact-field{
+  flex-direction: column;
+  padding:10px;
+}
+
+#contact-details{
+  font-size:12px;
+  width:20%;
+  gap:10px;
+  text-align:left;
+}
+
+#contact-form{
+  width:60%;
+  gap:10px;
+}
+
+#contact-form form{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contact-form form button{
+  width:100px;
+  height:25px;
+  background-color:#824c2a;
+  color:white;
+  font-weight:bolder;
+  border:none;
+}
+
+.contact-field input{
+  height:25px;
+}
+
+.contact-field textarea{
+  height:35px;
+}
+
+.contact-field input,.contact-field textarea{
+  width:100%;
+  padding:5px;
+}
+
+.blogs-container{
+  padding-top:10px;
+  text-align:center;
+  color:white;
+  border:1px solid white;
+}
+
+.blogs,.blogs .blog-card{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width:100%;
+}
+
+.blogs .blog-card{
+  width:100%;
+  height:275px;
+  flex-direction:column;
+  font-size:12px;
+  gap:5px;
+}
+
+.blogs .blog-card img{
+  width:75%;
+  height:200px;
+  object-fit:cover;
+}
+
+.blogs .blog-card button{
+  width:100px;
+  height:30px;
+  background-color:#824c2a;
+  border: none;
+}
+
+.blogs .blog-card button a{
+  text-decoration:none;
+  color:white; 
+  font-weight:bolder;
+}
+
+footer{
+  height:30px;
+  width:100%;
+  text-align: center;
+  border-top:1px solid white;
+  color:white;
+  padding:10px;
+  font-size:10px;
+}
+@media screen and (max-width: 670px){
+  .nav-links ul{
+    font-size:13px;
+  }
+  .Hero .Hero-text{
+    top:70px;
+  }
+  .Hero .Hero-text h1{
+    font-size:30px;
+  }
+  .Hero .Hero-text button{
+    width:100px;
+    height:30px;
+  }
+  .about-us{
+    top:250px;
+  }
+  .about-us-text{
+    max-width:95%;
+    font-size:10px;
+  }
+  .product{
+    font-size:10px;
+  }
+  .product button{
+    font-size:10px;
+    height:25px; 
+    width:80px;
+  }
+  .reviews img{
+    height:540px;
+  }
+  .reviewCard{
+    font-size:8px;
+  }
+  .blogs .blog-card{
+    height:200px;
+  }
+  .blogs .blog-card img{
+    width:100%;
+    height:120px;
+  }
+  #contact-details{
+    width:40%;
+  }
+  #contact-form{
+    width:60%;
+  }
+  }
